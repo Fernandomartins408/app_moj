@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "2222:8080"
+    container_name: app_sta
+    restart: unless-stopped   
